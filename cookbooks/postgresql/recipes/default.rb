@@ -6,7 +6,7 @@
 
 package 'postgresql-server' do
   action :install
-  notifies :run, 'execute[postgresql-init]', :immediately
+  notifies :run, 'execute[postgresql-init]'
 end
 
 execute 'postgresql-init' do
